@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Options } from './const';
+import { OptionsType, TextFormatsType } from './const';
+import { faBold, faItalic, faUnderline, faStrikethrough, faSuperscript, faSubscript } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'rt-editor',
@@ -9,21 +10,19 @@ import { Options } from './const';
 export class RtEditorComponent implements OnInit {
 
   textData: string = '';
-
+  faBold = faBold;
+  faItalic = faItalic;
+  faUnderline = faUnderline;
+  faStrikethrough = faStrikethrough;
   toolbarOptions = {
-    text_format: {
-      bold: false,
-      italic: false,
-      underline: false,
-      strikethrough: false,
-    }
+    textFormats: ['bold', 'italic', 'underline', 'strike']
   }
   constructor() { }
 
   ngOnInit() {
   }
 
-  formatText(type: Options): void {
+  formatText(type: OptionsType): void {
     // this.toolbarOptions['text_format'][type] = !this.toolbarOptions['text_format'][type];
     switch (type) {
       case 'code':
