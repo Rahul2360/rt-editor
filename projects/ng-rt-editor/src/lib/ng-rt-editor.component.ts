@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { OptionsType, TextFormatsType } from './const';
-import { faBold, faItalic, faUnderline, faStrikethrough, faSuperscript, faSubscript } from '@fortawesome/free-solid-svg-icons';
+import { faBold, faItalic, faUnderline, faStrikethrough, 
+         faSuperscript, faSubscript,
+         faListUl, faListOl ,faUndo, faRedo,
+         faAlignLeft, faAlignRight, faAlignCenter, faAlignJustify,
+         faIndent, faOutdent
+        } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'rt-editor',
@@ -14,8 +19,31 @@ export class RtEditorComponent implements OnInit {
   faItalic = faItalic;
   faUnderline = faUnderline;
   faStrikethrough = faStrikethrough;
+  faSuperscript = faSuperscript;
+  faSubscript = faSubscript;
+  faListUl = faListUl;
+  faListOl = faListOl;
+  faUndo = faUndo;
+  faRedo = faRedo;
+  faAlignLeft = faAlignLeft;
+  faAlignRight = faAlignRight;
+  faAlignCenter = faAlignCenter;
+  faAlignJustify = faAlignJustify;
+  faIndent = faIndent;
+  faOutdent = faOutdent;
   toolbarOptions = {
-    textFormats: ['bold', 'italic', 'underline', 'strike']
+    formats: ['bold', 'italic', 'underline', 'strike'],
+    script: ['subscript', 'superscript'],
+    code: ['blockquote', 'code-block'],
+    // indent?: string
+    list: ['ordered', 'bullet'],
+    direction: ['ltr', 'rtl'],
+    // header?: number | Array<boolean | number>
+    // color?: string[] | string
+    // background?: string[] | string
+    align: ['left', 'center', 'right', 'justified'],
+    // font?: string[] | string
+    // size?: Array<boolean | string>
   }
   constructor() { }
 

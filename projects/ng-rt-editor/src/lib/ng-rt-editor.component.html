@@ -4,7 +4,7 @@
       <div class="card p-3">
         <div class="rt-container">
           <!-- <app-header></app-header> -->
-          <div class="rt-header d-flex flex-wrap">
+          <div class="rt-header d-flex">
             <!-- Text format -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="bold" class="rt-option" (click)="formatText('bold')">
@@ -24,10 +24,10 @@
             <!-- Subscript/superscript -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="superscript" class="rt-option" (click)="formatText('superscript')">
-                <!-- <fa-icon class="rt-text-format" icon="superscript"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faSuperscript"></fa-icon>
               </button>
               <button id="subscript" class="rt-option" (click)="formatText('subscript')">
-                <!-- <fa-icon class="rt-text-format" icon="subscript"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faSubscript"></fa-icon>
               </button>
             </div>
 
@@ -44,21 +44,20 @@
             <!-- List -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="insertOrderedList" class="rt-option" (click)="formatText('insertOrderedList')">
-                <!-- <fa-icon class="rt-text-format" icon="list-ol"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faListOl"></fa-icon>
               </button>
               <button id="insertUnorderedList" class="rt-option" (click)="formatText('insertUnorderedList')">
-                <!-- <fa-icon class="rt-text-format" icon="list"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faListUl"></fa-icon>
               </button>
             </div>
 
             <!-- Undo/Redo -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="undo" class="rt-option" (click)="formatText('undo')">
-                <!-- <fa-icon class="rt-text-format" icon="undo"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faUndo"></fa-icon>
               </button>
               <button id="redo" class="rt-option" (click)="formatText('redo')">
-                <!-- <fa-icon class="rt-text-format" icon="redo"></fa-icon> -->
-
+                <fa-icon class="rt-text-format" [icon]="faRedo"></fa-icon>
               </button>
             </div>
 
@@ -75,26 +74,26 @@
             <!-- Alignment -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="justifyLeft" class="rt-option" (click)="formatText('justifyLeft')">
-                <!-- <fa-icon class="rt-text-format" icon="align-left"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faAlignLeft"></fa-icon>
               </button>
               <button id="justifyCenter" class="rt-option" (click)="formatText('justifyCenter')">
-                <!-- <fa-icon class="rt-text-format" icon="align-center"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faAlignCenter"></fa-icon>
               </button>
               <button id="justifyRight" class="rt-option" (click)="formatText('justifyRight')">
-                <!-- <fa-icon class="rt-text-format" icon="align-right"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faAlignRight"></fa-icon>
               </button>
               <button id="justifyFull" class="rt-option" (click)="formatText('justifyFull')">
-                <!-- <fa-icon class="rt-text-format" icon="align-justify"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faAlignJustify"></fa-icon>
               </button>
             </div>
 
             <!-- Indent -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="indent" class="rt-option" (click)="formatText('indent')">
-                <!-- <fa-icon class="rt-text-format" icon="indent"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faIndent"></fa-icon>
               </button>
               <button id="outdent" class="rt-option" (click)="formatText('outdent')">
-                <!-- <fa-icon class="rt-text-format" icon="outdent"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faOutdent"></fa-icon>
               </button>
             </div>
 
