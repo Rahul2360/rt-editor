@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { OptionsType, TextFormatsType } from './const';
 import { faBold, faItalic, faUnderline, faStrikethrough, 
-         faSuperscript, faSubscript,
+         faSuperscript, faSubscript, faLink, faUnlink,
          faListUl, faListOl ,faUndo, faRedo,
          faAlignLeft, faAlignRight, faAlignCenter, faAlignJustify,
-         faIndent, faOutdent
+         faIndent, faOutdent, faQuoteRight
         } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -31,6 +31,9 @@ export class RtEditorComponent implements OnInit {
   faAlignJustify = faAlignJustify;
   faIndent = faIndent;
   faOutdent = faOutdent;
+  faQuoteRight = faQuoteRight;
+  faLink = faLink;
+  faUnlink = faUnlink;
   toolbarOptions = {
     formats: ['bold', 'italic', 'underline', 'strike'],
     script: ['subscript', 'superscript'],

@@ -37,7 +37,7 @@
                 <fa-icon class="rt-text-format" icon="code"></fa-icon>
               </button> -->
               <button id="quote" class="rt-option" (click)="formatText('blockquote')">
-                <!-- <fa-icon class="rt-text-format" icon="quote-right"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faQuoteRight"></fa-icon>
               </button>
             </div>
 
@@ -64,10 +64,10 @@
             <!-- Link -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="createLink" class="rt-option" (click)="formatText('link')">
-                <!-- <fa-icon class="rt-text-format" icon="link"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faLink"></fa-icon>
               </button>
               <button id="unlink" class="rt-option" (click)="formatText('unlink')">
-                <!-- <fa-icon class="rt-text-format" icon="unlink"></fa-icon> -->
+                <fa-icon class="rt-text-format" [icon]="faUnlink"></fa-icon>
               </button>
             </div>
 
