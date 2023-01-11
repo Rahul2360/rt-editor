@@ -5,6 +5,17 @@
         <div class="rt-container">
           <!-- <app-header></app-header> -->
           <div class="rt-header d-flex">
+
+            <!-- Undo/Redo -->
+            <div class="mr-3 d-flex flex-wrap">
+              <button id="undo" class="rt-option" (click)="formatText('undo')">
+                <fa-icon class="rt-text-format" [icon]="faUndo"></fa-icon>
+              </button>
+              <button id="redo" class="rt-option" (click)="formatText('redo')">
+                <fa-icon class="rt-text-format" [icon]="faRedo"></fa-icon>
+              </button>
+            </div>
+            
             <!-- Text format -->
             <div class="mr-3 d-flex flex-wrap">
               <button id="bold" class="rt-option" (click)="formatText('bold')">
@@ -48,16 +59,6 @@
               </button>
               <button id="insertUnorderedList" class="rt-option" (click)="formatText('insertUnorderedList')">
                 <fa-icon class="rt-text-format" [icon]="faListUl"></fa-icon>
-              </button>
-            </div>
-
-            <!-- Undo/Redo -->
-            <div class="mr-3 d-flex flex-wrap">
-              <button id="undo" class="rt-option" (click)="formatText('undo')">
-                <fa-icon class="rt-text-format" [icon]="faUndo"></fa-icon>
-              </button>
-              <button id="redo" class="rt-option" (click)="formatText('redo')">
-                <fa-icon class="rt-text-format" [icon]="faRedo"></fa-icon>
               </button>
             </div>
 
