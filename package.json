@@ -1,6 +1,6 @@
 {
   "name": "rt-editor",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -39,5 +39,19 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^13.0.0",
     "typescript": "~4.6.2"
-  }
+  },
+  "keywords": [
+    "editor",
+    "rich text",
+    "wysiwyg",
+    "angular",
+    "directive",
+    "component",
+    "quill",
+    "quilljs",
+    "angular",
+    "ng",
+    "ngx",
+    "text editor"
+  ]
 }
