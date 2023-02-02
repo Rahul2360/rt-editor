@@ -1,6 +1,6 @@
 # ng-rt-editor
 
-Angular Rich Text Editor is an Angula r(>=2) module which can be integrated in your existing applications
+Angular Rich Text Editor is an Angular(>=2) module which can be integrated in your existing applications
 
 ## Demo
 ## Installation
