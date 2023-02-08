@@ -3,6 +3,7 @@
 Angular Rich Text Editor is an Angular(>=2) module which can be integrated in your existing applications
 
 ## Demo
+Play with the [Demo here](https://rahul2360.github.io/rt-editor/)
 ## Installation
 
 Using [NPM](https://www.npmjs.com/)
