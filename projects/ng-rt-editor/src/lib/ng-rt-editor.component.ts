@@ -14,7 +14,7 @@ import { faBold, faItalic, faUnderline, faStrikethrough,
 })
 export class RtEditorComponent implements OnInit {
 
-  @Input() isDisabled?: boolean = true;
+  @Input() isDisabled?: boolean = false;
   textData: string = '';
   faBold = faBold;
   faItalic = faItalic;
