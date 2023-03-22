@@ -36,6 +36,10 @@
     outline: none;
   }
 
+  #text-input.disabled {
+    background: #eee;
+    // opacity: 0.6;
+  }
 }
 
 .d-flex {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { OptionsType, TextFormatsType } from './const';
 import { faBold, faItalic, faUnderline, faStrikethrough, 
          faSuperscript, faSubscript, faLink, faUnlink,
@@ -14,6 +14,7 @@ import { faBold, faItalic, faUnderline, faStrikethrough,
 })
 export class RtEditorComponent implements OnInit {
 
+  @Input() isDisabled?: boolean = true;
   textData: string = '';
   faBold = faBold;
   faItalic = faItalic;

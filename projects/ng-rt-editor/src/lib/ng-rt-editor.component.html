@@ -4,7 +4,7 @@
       <div class="card p-3">
         <div class="rt-container">
           <!-- <app-header></app-header> -->
-          <div class="rt-header d-flex">
+          <div *ngIf="!isDisabled" class="rt-header d-flex">
 
             <!-- Undo/Redo -->
             <div class="mr-3 d-flex flex-wrap">
@@ -123,7 +123,7 @@
           <!-- <div class="rt-textarea">
             <textarea name="" id="" cols="30" rows="10" [innerHTML]="textData"></textarea>
           </div> -->
-          <div id='text-input' contenteditable>
+          <div id='text-input' [attr.contenteditable]="!isDisabled" [ngClass]="{'disabled': isDisabled}">
             <h1>A WYSIWYG Editor.</h1>
             <p>Try making some changes here. Add your own text.</p>
           </div>
